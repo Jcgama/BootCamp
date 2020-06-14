@@ -9,6 +9,7 @@
 import UIKit
 
 class LoginController: UIViewController {
+    private let imageView = UIImageView(image: #imageLiteral(resourceName: "firebase-logo"))
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -24,5 +25,10 @@ class LoginController: UIViewController {
         gradient.locations = [0,1]
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
+        
+        view.addSubview(imageView)
+        imageView.centerX(inView: view)
+        imageView.setDimensions(height: 120, width: 120)
+        imageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
     }
 }
