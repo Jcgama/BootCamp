@@ -10,6 +10,8 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    // MARK: - PROPERTIES
+    
     private let imageView = UIImageView(image: #imageLiteral(resourceName: "firebase-logo"))
     private let emailTextField = CustomTextField(placeholder: "Email")
     private let passwordTextView: CustomTextField = {
@@ -17,11 +19,27 @@ class LoginController: UIViewController {
         tf.isSecureTextEntry = true
         return tf
     }()
+    private let loginButton: AuthButton = {
+        let button = AuthButton(type: .system)
+        button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        return button
+    }()
+    
+    // MARK: - LIFECYCLE
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
+    
+    // MARK: - SELECTORS
+    
+    @objc func handleLogin() {
+        print("ola")
+    }
+    
+    // MARK: - HELPERS
     
     private func configureUI() {
         
@@ -39,7 +57,7 @@ class LoginController: UIViewController {
         imageView.setDimensions(height: 120, width: 120)
         imageView.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 32)
         
-        let stack = UIStackView(arrangedSubviews: [emailTextField, passwordTextView])
+        let stack = UIStackView(arrangedSubviews: [emailTextField, passwordTextView, loginButton])
         stack.axis = .vertical
         stack.spacing = 20
         

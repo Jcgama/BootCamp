@@ -16,6 +16,7 @@
 		4301ED6A2496BADA0002883B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301ED692496BADA0002883B /* LoginController.swift */; };
 		4301ED6C2496BB4F0002883B /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301ED6B2496BB4F0002883B /* UIViewExtensions.swift */; };
 		4301ED6F2496DAAA0002883B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301ED6E2496DAAA0002883B /* CustomTextField.swift */; };
+		4301ED712496DD790002883B /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4301ED702496DD790002883B /* AuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4301ED692496BADA0002883B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		4301ED6B2496BB4F0002883B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		4301ED6E2496DAAA0002883B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4301ED702496DD790002883B /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				4301ED6E2496DAAA0002883B /* CustomTextField.swift */,
+				4301ED702496DD790002883B /* AuthButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4301ED582496BA200002883B /* ViewController.swift in Sources */,
+				4301ED712496DD790002883B /* AuthButton.swift in Sources */,
 				4301ED6C2496BB4F0002883B /* UIViewExtensions.swift in Sources */,
 				4301ED6F2496DAAA0002883B /* CustomTextField.swift in Sources */,
 				4301ED6A2496BADA0002883B /* LoginController.swift in Sources */,
